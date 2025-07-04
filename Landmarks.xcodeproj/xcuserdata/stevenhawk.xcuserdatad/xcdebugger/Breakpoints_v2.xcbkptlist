@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1F7EC512-ABC6-4879-B239-D16FA70DFF9E"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4AE3F43A-B0CF-4EB6-9751-291D1D8DE200"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Landmarks/Views/Landmarks/LandmarkList.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "LandmarkList"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "4AE3F43A-B0CF-4EB6-9751-291D1D8DE200 - f390d6fe4a35e61d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Landmarks.LandmarkList.init() -&gt; Landmarks.LandmarkList"
+                  moduleName = "Landmarks.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/stevenhawk/Documents/Projects/Landmarks/Landmarks/Views/Landmarks/LandmarkList.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11">
+               </Location>
+               <Location
+                  uuid = "4AE3F43A-B0CF-4EB6-9751-291D1D8DE200 - 95dcdaacabd0b727"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Landmarks.LandmarkList.init(modelData: SwiftUI.Environment&lt;Landmarks.ModelData&gt;) -&gt; Landmarks.LandmarkList"
+                  moduleName = "Landmarks.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/stevenhawk/Documents/Projects/Landmarks/Landmarks/Views/Landmarks/LandmarkList.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
