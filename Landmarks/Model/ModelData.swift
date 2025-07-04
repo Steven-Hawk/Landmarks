@@ -9,7 +9,26 @@ import Foundation
 
 @Observable
 class ModelData {
-    var landmarks: [Landmark] = load("landmarkData.json")
+    var landmarks: [Landmark] = []
+
+    init() {
+        landmarks = load("landmarkData.json")
+        Task {
+            await fetchRemoteLandmarks()
+        }
+    }
+
+    @MainActor
+    private func fetchRemoteLandmarks() async {
+        do {
+            let remote = try await NPSService().fetchLandmarks()
+            if !remote.isEmpty {
+                landmarks = remote
+            }
+        } catch {
+            // If the network call fails, fall back to bundled data.
+        }
+    }
 }
 
 func load<T: Decodable>(_ filename: String) -> T {
