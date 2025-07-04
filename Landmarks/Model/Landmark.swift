@@ -34,4 +34,15 @@ struct Landmark: Hashable, Codable, Identifiable {
         var latitude: Double
         var longitude: Double
     }
+
+    init(id: Int, name: String, park: String, state: String, description: String, isFavorite: Bool, imageName: String, coordinates: Coordinates) {
+        self.id = id
+        self.name = name
+        self.park = park
+        self.state = state
+        self.description = description
+        self.isFavorite = isFavorite
+        self.imageName = imageName
+        self.coordinates = coordinates
+    }
 }
