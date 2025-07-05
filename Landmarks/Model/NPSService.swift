@@ -2,6 +2,9 @@ import Foundation
 import CoreLocation
 
 struct NPSService {
+    enum NPSError: Error {
+        case missingAPIKey
+    }
     struct APIResponse: Decodable {
         let data: [NPSPark]
     }
@@ -14,8 +17,9 @@ struct NPSService {
     }
 
     func fetchLandmarks() async throws -> [Landmark] {
-        guard let apiKey = ProcessInfo.processInfo.environment["NPS_API_KEY"], !apiKey.isEmpty else {
-            return []
+        guard let apiKey = ProcessInfo.processInfo.environment["NPS_API_KEY"],
+              !apiKey.isEmpty else {
+            throw NPSError.missingAPIKey
         }
         var components = URLComponents(string: "https://developer.nps.gov/api/v1/parks")!
         components.queryItems = [
