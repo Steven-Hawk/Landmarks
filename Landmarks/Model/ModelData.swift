@@ -26,7 +26,8 @@ class ModelData {
                 landmarks = remote
             }
         } catch {
-            // If the network call fails, fall back to bundled data.
+            // Keep using bundled data when the network call fails.
+            print("Failed to fetch remote landmarks:", error)
         }
     }
 }
